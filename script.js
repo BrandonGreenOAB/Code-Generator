@@ -8,6 +8,10 @@ var cap = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N",
 var lwr = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 function generatePassword() {
+  passwordLength = prompt("How long would you like your password to be? must be between 8-129");
+
+  console.log(passwordLength);
+
 
 }
 
