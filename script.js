@@ -11,7 +11,7 @@ function generatePassword() {
   passwordLength = prompt("How long would you like your password to be? must be between 8-129");
 
   console.log(passwordLength);
-  
+
   if (passwordLength <= 7) {
     alert("must be at least 8 characters");
   }
@@ -27,7 +27,27 @@ function generatePassword() {
     passwordNum = confirm("would you like numbers?");
 
   }
+  
+  var passArray = [];
 
+  if (passwordSp) {
+    passArray = passArray.concat(spChar);
+  }
+  if (passwordCap) {
+    passArray = passArray.concat(cap);
+  }
+  if (passwordLwr) {
+    passArray = passArray.concat(lwr);
+  }
+  var generatedPassword = "";
+
+  for (let i = 0; i < passwordLength; i++) {
+
+   generatedPassword += passArray[Math.floor(Math.random() * passArray.length)]; 
+
+  }
+
+  return generatedPassword
 
 }
 
