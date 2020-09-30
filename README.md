@@ -15,3 +15,7 @@ use this to create a randomly generated secure password for any website.
 # how it works 
 
 this application uses if statements to provide a larger array with smaller arrays that the user selects (special characters, numbers, uppercase, lowercase) and uses Math.floor(Math.random) to randomly select from those arrays with the length of the password length.
+
+# screenshots
+
+![Screenshot of application](capture.png)
